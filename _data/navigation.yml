@@ -1,6 +1,11 @@
 # Site navigation links
 
 - title: Articles
-  url: /articles
+  url: /blog
   excerpt:
   image:
+
+- title: A Propos
+  url: /about
+  excerpt:
+  image:    
