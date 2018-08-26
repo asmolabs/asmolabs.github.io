@@ -1,7 +1,7 @@
 ---
-layout: archive
+layout: default
 permalink: /
-title: "Latest Posts"
+title: "Acceuil"
 ---
 
 <div class="tiles">
