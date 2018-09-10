@@ -103,7 +103,7 @@ skills:
   - name: wordpress
 
 icon_size: 50 # font-size of icons in px
-colored: colored # Leave blank for black and white icons
+colored:  # Leave blank for black and white icons
 
 project_button: Github
 
