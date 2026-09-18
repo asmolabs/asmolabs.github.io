@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Asmolabs — outils de sécurité applicative en logiciel libre</title>
+<meta name="description" content="Asmolabs développe Vectispire, une plateforme libre de suivi de la posture de sécurité applicative : SBOM, vulnérabilités connues, secrets en dur, licences et configuration d'infrastructure, dans un seul tableau de bord.">
+<link rel="canonical" href="https://asmolabs.github.io/">
+<link rel="alternate" hreflang="fr" href="https://asmolabs.github.io/">
+<link rel="alternate" hreflang="en" href="https://asmolabs.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://asmolabs.github.io/en/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Asmolabs">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://asmolabs.github.io/">
+<meta property="og:title" content="Asmolabs — outils de sécurité applicative en logiciel libre">
+<meta property="og:description" content="Vectispire : SBOM, vulnérabilités connues, secrets en dur, licences et configuration d'infrastructure, dans un seul tableau de bord. Chaque scanner tourne réseau coupé.">
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1117'/%3E%3Cpath d='M16 5.5 25.5 9v7.2c0 5.4-3.8 9.4-9.5 11.3-5.7-1.9-9.5-5.9-9.5-11.3V9z' fill='none' stroke='%2338d9a9' stroke-width='2.1' stroke-linejoin='round'/%3E%3Cpath d='m11.8 16.2 3 3 5.4-6' fill='none' stroke='%2338d9a9' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 5.5 25.5 9v7.2c0 5.4-3.8 9.4-9.5 11.3-5.7-1.9-9.5-5.9-9.5-11.3V9z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+        <path d="m11.8 16.2 3 3 5.4-6" fill="none" stroke="var(--accent)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Asmolabs
+    </a>
+    <nav aria-label="Navigation principale">
+      <a class="hide-s" href="#vectispire">Vectispire</a>
+      <a href="https://asmolabs.github.io/vectispire/fr/">Documentation</a>
+      <a class="hide-s" href="#contact">Contact</a>
+      <a class="lang" href="/en/" hreflang="en" lang="en" aria-label="Read this page in English">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="hero wrap">
+    <span class="eyebrow">Logiciel libre · Apache 2.0</span>
+    <h1>La sécurité de ce que vous livrez, mesurée chez vous.</h1>
+    <p class="lede">
+      Asmolabs développe <strong>Vectispire</strong> : une plateforme de suivi de la posture de
+      sécurité applicative qui analyse vos dépôts et vos images de conteneur, et centralise ce
+      qu'elle trouve dans un seul tableau de bord. Le code source est ouvert, et l'analyse ne
+      sort pas de votre infrastructure.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://asmolabs.github.io/vectispire/fr/">
+        Lire la documentation
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/asmolabs/vectispire">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        Voir le code
+      </a>
+    </div>
+  </div>
+
+  <section id="vectispire" class="wrap">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Vectispire</h2>
+        <div class="tags">
+          <span class="tag">Apache 2.0</span>
+          <span class="tag">Spring Boot · JDK 25</span>
+          <span class="tag">Angular</span>
+          <span class="tag">PostgreSQL · MySQL</span>
+        </div>
+      </div>
+
+      <p>
+        Vectispire analyse des dépôts Git et des images de conteneur, génère un
+        <strong>SBOM</strong>, y rapproche les vulnérabilités connues, et détecte les secrets
+        écrits en dur, les licences problématiques et les erreurs de configuration
+        d'infrastructure. Chaque constat est suivi dans le temps : première apparition, nombre
+        d'occurrences, existence d'un correctif, et une décision de triage exprimée dans le
+        vocabulaire <strong>VEX</strong>.
+      </p>
+
+      <div class="claim">
+        <strong>Chaque scanner s'exécute dans un conteneur éphémère, réseau coupé et montage en
+        lecture seule.</strong> Rien du code analysé ne quitte votre machine — c'est une
+        propriété du produit, pas une clause de contrat.
+      </div>
+
+      <p style="margin-top:1.6rem">
+        L'enrichissement <strong>EPSS</strong> et le catalogue <strong>CISA KEV</strong>
+        priorisent au-delà du score CVSS brut, et la distinction entre dépendance directe et
+        transitive sépare ce qui se corrige cet après-midi de ce qui attend une publication en
+        amont. Les exports suivent les formats de la chaîne d'approvisionnement logicielle :
+        CycloneDX&nbsp;1.6 avec VEX intégré, CSAF&nbsp;2.0 et OpenVEX.
+      </p>
+      <p>
+        La seconde moitié du produit répond à une autre question : <strong>que pouvez-vous
+        montrer</strong>. Le parc est évalué contre six référentiels — NIS&nbsp;2, DORA,
+        ISO&nbsp;27001, PCI-DSS, CRA, SOC&nbsp;2 — de façon déterministe. La
+        <strong>déclaration d'applicabilité</strong> confronte ce que vous affirmez de chaque
+        contrôle à ce qui est mesuré, et ce sont les désaccords qu'elle met en haut. Le
+        <strong>périmètre certifié</strong>, les <strong>exceptions</strong> accordées, les refus de
+        la barrière CI et un journal d'audit chaîné se rassemblent dans une
+        <strong>attestation datée et signée</strong> : à quoi ressemblait le parc, à une heure
+        donnée, preuve jointe.
+      </p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head">
+      <h2>La documentation</h2>
+      <p>
+        Une trentaine de pages, de l'installation à l'exploitation. Publiée depuis le dépôt du
+        projet, elle suit le code plutôt que de le précéder. <span style="color:var(--text-faint)">Disponible en français et en anglais.</span>
+      </p>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/getting-started/installation/">
+        <span class="kicker">Démarrer</span>
+        <h3>Installation <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Prérequis, base de données, premier compte, premier lancement.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/getting-started/first-scan/">
+        <span class="kicker">Démarrer</span>
+        <h3>Premier scan <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Enregistrer un dépôt, lancer une analyse, la regarder aboutir.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/getting-started/reading-results/">
+        <span class="kicker">Démarrer</span>
+        <h3>Lire les résultats <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Constats, gravité, et ce qui demande réellement une action.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/integrations/ci-gate/">
+        <span class="kicker">Intégration</span>
+        <h3>Barrière CI <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Faire échouer une construction sur une politique, depuis un script ou un modèle de pipeline.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/guide/compliance/">
+        <span class="kicker">Guide</span>
+        <h3>Conformité <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Un évaluateur de posture projeté sur NIS&nbsp;2, DORA, ISO&nbsp;27001, PCI-DSS, EU&nbsp;CRA et SOC&nbsp;2.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/administration/agents/">
+        <span class="kicker">Administration</span>
+        <h3>Agents distants <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Déporter l'analyse hors du plan de contrôle, en sortie HTTP uniquement.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/reference/configuration/">
+        <span class="kicker">Référence</span>
+        <h3>Configuration <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Toutes les variables d'environnement et leurs valeurs par défaut.</p>
+      </a>
+      <a class="card" href="https://asmolabs.github.io/vectispire/fr/reference/faq/">
+        <span class="kicker">Référence</span>
+        <h3>FAQ <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Les questions qui reviennent, et les réponses qui ne sont pas dans le reste.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head">
+      <h2>Ce qui est analysé</h2>
+      <p>Des outils reconnus, orchestrés — pas réécrits. Chaque image de scanner est épinglée par empreinte, jamais par tag.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Les six familles d'analyse et l'outil qui les exécute.</caption>
+        <thead>
+          <tr><th scope="col">Domaine</th><th scope="col">Outil</th><th scope="col">Ce qu'il en ressort</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Dépendances (SCA)</th>
+            <td><code>syft</code> → <code>grype</code></td>
+            <td class="note">Génération du SBOM, puis rapprochement des vulnérabilités connues</td>
+          </tr>
+          <tr>
+            <th scope="row">Secrets</th>
+            <td><code>gitleaks</code></td>
+            <td class="note">Clés d'API, jetons et identifiants commités dans le dépôt</td>
+          </tr>
+          <tr>
+            <th scope="row">Infrastructure as code</th>
+            <td><code>checkov</code></td>
+            <td class="note">Erreurs de configuration Terraform et Kubernetes</td>
+          </tr>
+          <tr>
+            <th scope="row">Code source</th>
+            <td><code>semgrep</code></td>
+            <td class="note">Désactivé par défaut ; demande un jeu de règles que vous installez</td>
+          </tr>
+          <tr>
+            <th scope="row">Fin de support</th>
+            <td><code>endoflife.date</code></td>
+            <td class="note">Exécutions et distributions sorties du support de sécurité — un risque sans CVE attachée</td>
+          </tr>
+          <tr>
+            <th scope="row">Licences</th>
+            <td class="note">Depuis le SBOM</td>
+            <td class="note">Évaluées contre une liste de blocage configurable</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="sec-head">
+      <h2>Contact</h2>
+      <p>
+        Tout passe par GitHub : une question, un défaut, une idée. Le suivi est public, donc la
+        réponse profite à la personne suivante qui se pose la question.
+      </p>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="https://github.com/asmolabs/vectispire/issues">
+        <span class="kicker">Questions &amp; défauts</span>
+        <h3>Ouvrir un ticket <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Le suivi de Vectispire, pour tout ce qui n'est pas une vulnérabilité.</p>
+      </a>
+      <a class="card" href="https://github.com/asmolabs/vectispire/blob/main/SECURITY.md">
+        <span class="kicker">Vulnérabilités</span>
+        <h3>Signaler en privé <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Pas par un ticket : le suivi est public, et un rapport y est une divulgation avant que quiconque ait pu corriger. La marche à suivre est dans <code style="font-family:var(--mono);font-size:.86em">SECURITY.md</code>.</p>
+      </a>
+      <a class="card" href="https://github.com/asmolabs">
+        <span class="kicker">Organisation</span>
+        <h3>Asmolabs sur GitHub <span class="arrow" aria-hidden="true">→</span></h3>
+        <p>Les dépôts publics, et ce sur quoi le travail avance.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="sec-head">
+      <h2>État du projet</h2>
+      <p>
+        Vectispire est en développement actif et n'a pas encore publié de version stable.
+        Le dire ici plutôt que de le laisser découvrir fait partie du produit.
+      </p>
+    </div>
+
+    <dl class="status">
+      <div class="stat">
+        <dt>Version</dt>
+        <dd>0.9.0 <span>Pré-version, en développement actif</span></dd>
+      </div>
+      <div class="stat">
+        <dt>Licence</dt>
+        <dd>Apache 2.0 <span>Usage, modification et déploiement internes sans contrepartie</span></dd>
+      </div>
+      <div class="stat">
+        <dt>Base de données</dt>
+        <dd>PostgreSQL · MySQL <span>SQLite sert de fixture de test, pas de moteur déployable</span></dd>
+      </div>
+      <div class="stat">
+        <dt>Analyse</dt>
+        <dd>Locale <span>Conteneurs éphémères, réseau coupé, montage en lecture seule</span></dd>
+      </div>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <p>© <span id="y">2026</span> Asmolabs — publié sous licence Apache&nbsp;2.0.</p>
+    <nav class="foot-links" aria-label="Liens de pied de page">
+      <a href="https://asmolabs.github.io/vectispire/fr/">Documentation</a>
+      <a href="https://github.com/asmolabs/vectispire">Dépôt Vectispire</a>
+      <a href="https://github.com/asmolabs">Organisation GitHub</a>
+      <a href="/en/" hreflang="en" lang="en">English version</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // The only script on the page: keep the footer year honest without a build step.
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
